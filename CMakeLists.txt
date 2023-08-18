@@ -20,6 +20,7 @@ target_link_options(
     PRIVATE
     -static
     -static-libgcc
+    $<$<CONFIG:Release>:-s>
 )
 
 target_include_directories(
